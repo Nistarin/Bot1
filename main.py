@@ -12,12 +12,12 @@ async def on_ready():
 
 
 @client.command(pass_context=True)
-async def teste(ctx):
-    await client.say("```++ Time Machine: Active! ++```")
-    await asyncio.sleep(60*60*7.5)
-    await client.say("```++ Time Machine: Running low on gas ++```")
-    await asyncio.sleep(60*30)
-    await client.say("```++ Time Machine: Deactivate ++```")
+async def start(ctx):
+    await client.say(" Time Machine: Active! @here")
+    await asyncio.sleep(5)
+    await client.say(" Time Machine: Running low on gas @here")
+    await asyncio.sleep(5)
+    await client.say(" Time Machine: Deactivate @here")
 
 
 client.run('NTM3NDg0ODcxMjUwMDgzODQw.DyoO5g.am-NvQVAe31YWzOcDR2vbIJaHM8')
